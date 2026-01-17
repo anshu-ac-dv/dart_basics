@@ -9,8 +9,14 @@ void main() {
 
   // var sum = number1 + number2;
   // print('The sum of $number1 and $number2 is $sum.');
-  stdout.write('Enter value in feet: ');
-  var feet = stdin.readLineSync();
-  var meter = double.parse(feet!) * 0.3048;
-  print('The value in meters is $meter.');
+
+  // stdout.write('Enter value in feet: ');
+  // var feet = stdin.readLineSync();
+  // var meter = double.parse(feet!) * 0.3048;
+  // print('The value in meters is $meter.');
+
+  stdout.write('Enter temperature in Celsius: ');
+  var celsius = stdin.readLineSync();
+  var fahrenheit = double.parse(celsius!) * 9 / 5 + 32;
+  print('The temperature in Fahrenheit is $fahrenheit.');
 }
