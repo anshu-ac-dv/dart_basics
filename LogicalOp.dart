@@ -9,6 +9,6 @@ void main() {
   result = (x > 20) || (y < 40); // logical OR
   print("x > 20 || y < 40: $result");
 
-  result = !(x > 20); // logical NOT
-  print("!(x > 20): $result");
+  result = !(x < 20); // logical NOT
+  print("!(x < 20): $result");
 }
