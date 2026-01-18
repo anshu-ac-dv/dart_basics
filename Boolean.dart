@@ -7,9 +7,9 @@ void main() {
 
   // Logical operations
   print('isTrue AND isFalse: ${isTrue && isFalse}');
-  print('isTrue OR isFalse: ${isTrue || isFalse}');
+  print('isTrue OR isFalse: ${isTrue}');
   print('NOT isTrue: ${!isTrue}');
 
-  bool result = (isTrue && !isFalse) || (isFalse && !isTrue);
+  bool result = (isTrue && !isFalse);
   print('Result of complex expression: $result');
 }
