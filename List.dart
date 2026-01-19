@@ -10,6 +10,7 @@ void main() {
 
   var data = [1, 2.5, 'Hello', true, 'Dart', 3.14, false];
 
+  /*
   for (int i = 0; i < age.length; i++) {
     if (age[i] >= 18) {
       print("Age ${age[i]}: Eligible for voting");
@@ -17,6 +18,7 @@ void main() {
       print("Age ${age[i]}: Not eligible for voting");
     }
   }
+  */
 
   print("Names List: $names");
   print("Marks List: $marks");
@@ -24,6 +26,10 @@ void main() {
   print("Data List: $data");
 
   print("Total names: ${names.length}");
+  print("Total marks: ${marks.length}");
+  print("Total attendance: ${attendance.length}");
+  print("Total data: ${data.length}");
+
   print("First name: ${names.first}");
   print("Last name: ${names.last}");
 
@@ -31,4 +37,14 @@ void main() {
   print("Sorted Marks List: ${marks..sort()}");
   print("Is age list empty? ${age.isEmpty}");
   print("Is marks list not empty? ${marks.isNotEmpty}");
+
+  stdout.write("Enter number of inputs: ");
+  int inputCount = int.parse(stdin.readLineSync()!);
+  List<String> userInputs = [];
+  for (int i = 0; i < inputCount; i++) {
+    stdout.write("Enter age ${i + 1}: ");
+    String input = stdin.readLineSync()!;
+    userInputs.add(input);
+  }
+  print("User ages: $userInputs");
 }
