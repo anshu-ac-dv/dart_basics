@@ -4,6 +4,6 @@ void main() {
   // Simple for loop that prints numbers from 0 to x-1
   for (var i = 0; i < x; i++) {
     // Print the current value of i
-    print(i);
+    print('$i square is ${i * i}');
   }
 }
