@@ -1,15 +1,25 @@
 void main() {
-  Student student1 = Student();
-  student1.Display();
+  List<Student> students = [
+    Student("Anshu", 22),
+    Student("Ankita", 22),
+    Student("Priya", 22),
+    Student("Anshu", 22),
+  ];
+
+  students.forEach((student) {
+    print("----- Student Details -----");
+    // print("Name: ${student.name}, Age: ${student.age}");
+    student.Display();
+  });
 }
 
 class Student {
   String? name;
   int? age;
 
-  Student() {
-    name = "John Doe";
-    age = 20;
+  Student(String name, int age) {
+    this.name = name;
+    this.age = age;
   }
 
   void Display() {
